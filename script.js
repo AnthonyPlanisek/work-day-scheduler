@@ -1,14 +1,4 @@
-//var submit = $(".submit")
-//var AM_9 = $("#9am")
-$("#9am").text(document.getElementById("9am").innerHTML = localStorage.getItem("9time"))
-$("#10am").text(document.getElementById("10am").innerHTML = localStorage.getItem("10time"))
-$("#11am").text(document.getElementById("11am").innerHTML = localStorage.getItem("11time"))
-$("#12pm").text(document.getElementById("12pm").innerHTML = localStorage.getItem("12time"))
-$("#1pm").text(document.getElementById("1pm").innerHTML = localStorage.getItem("1time"))
-$("#2pm").text(document.getElementById("2pm").innerHTML = localStorage.getItem("2time"))
-$("#3pm").text(document.getElementById("3pm").innerHTML = localStorage.getItem("3time"))
-$("#4pm").text(document.getElementById("4pm").innerHTML = localStorage.getItem("4time"))
-$("#5pm").text(document.getElementById("5pm").innerHTML = localStorage.getItem("5time"))
+
 
 
 
@@ -81,6 +71,7 @@ if (time == 10){
     $("#3block").css("backgroundColor", "green")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
 }
 if (time == 11){
     $("#9block").css("backgroundColor", "grey")
@@ -92,6 +83,8 @@ if (time == 11){
     $("#3block").css("backgroundColor", "green")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
 }
 if (time == 12){
     $("#9block").css("backgroundColor", "grey")
@@ -103,6 +96,9 @@ if (time == 12){
     $("#3block").css("backgroundColor", "green")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
 }
 if (time == 1){
     $("#9block").css("backgroundColor", "grey")
@@ -114,6 +110,10 @@ if (time == 1){
     $("#3block").css("backgroundColor", "green")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
+    localStorage.removeItem("12time")
 }
 if (time == 2){
     $("#9block").css("backgroundColor", "grey")
@@ -125,6 +125,11 @@ if (time == 2){
     $("#3block").css("backgroundColor", "green")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
+    localStorage.removeItem("12time")
+    localStorage.removeItem("1time")
 }
 if (time == 3){
     $("#9block").css("backgroundColor", "grey")
@@ -136,6 +141,12 @@ if (time == 3){
     $("#3block").css("backgroundColor", "red")
     $("#4block").css("backgroundColor", "green")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
+    localStorage.removeItem("12time")
+    localStorage.removeItem("1time")
+    localStorage.removeItem("2time")
 }
 if (time == 4){
     $("#9block").css("backgroundColor", "grey")
@@ -147,6 +158,13 @@ if (time == 4){
     $("#3block").css("backgroundColor", "grey")
     $("#4block").css("backgroundColor", "red")
     $("#5block").css("backgroundColor", "green")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
+    localStorage.removeItem("12time")
+    localStorage.removeItem("1time")
+    localStorage.removeItem("2time")
+    localStorage.removeItem("3time")
 }
 if (time == 5){
     $("#9block").css("backgroundColor", "grey")
@@ -158,4 +176,26 @@ if (time == 5){
     $("#3block").css("backgroundColor", "grey")
     $("#4block").css("backgroundColor", "grey")
     $("#5block").css("backgroundColor", "red")
+    localStorage.removeItem("9time")
+    localStorage.removeItem("10time")
+    localStorage.removeItem("11time")
+    localStorage.removeItem("12time")
+    localStorage.removeItem("1time")
+    localStorage.removeItem("2time")
+    localStorage.removeItem("3time")
+    localStorage.removeItem("4time")
 }
+if (time >= 6){
+    localStorage.clear()
+}
+
+
+$("#9am").text(document.getElementById("9am").innerHTML = localStorage.getItem("9time"))
+$("#10am").text(document.getElementById("10am").innerHTML = localStorage.getItem("10time"))
+$("#11am").text(document.getElementById("11am").innerHTML = localStorage.getItem("11time"))
+$("#12pm").text(document.getElementById("12pm").innerHTML = localStorage.getItem("12time"))
+$("#1pm").text(document.getElementById("1pm").innerHTML = localStorage.getItem("1time"))
+$("#2pm").text(document.getElementById("2pm").innerHTML = localStorage.getItem("2time"))
+$("#3pm").text(document.getElementById("3pm").innerHTML = localStorage.getItem("3time"))
+$("#4pm").text(document.getElementById("4pm").innerHTML = localStorage.getItem("4time"))
+$("#5pm").text(document.getElementById("5pm").innerHTML = localStorage.getItem("5time"))
