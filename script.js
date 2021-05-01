@@ -8,7 +8,7 @@ $("#currentDay").text(date)
 
 
 
-//submit.addEventListener("click", logged)
+//collects user input to saved and display later
 
 function logged(){
     var content9 = $("#9am").html()
@@ -47,6 +47,9 @@ localStorage.setItem("4time", content4)
 console.log("S", content5)
 localStorage.setItem("5time", content5)
 }
+
+//changes the color of the background depending on the time
+//and clears local storage after time has passed
 
 var time = moment().format("h")
 console.log("y", time)
@@ -198,6 +201,7 @@ if (time <= 6){
     localStorage.clear()
 }
 
+//displays user inputs after screen refresh 
 
 $("#9am").text(document.getElementById("9am").innerHTML = localStorage.getItem("9time"))
 $("#10am").text(document.getElementById("10am").innerHTML = localStorage.getItem("10time"))
