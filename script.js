@@ -49,7 +49,7 @@ localStorage.setItem("5time", content5)
 }
 
 var time = moment().format("h")
-
+console.log("y", time)
 if (time == 9){
     $("#9block").css("backgroundColor", "red")
     $("#10block").css("backgroundColor", "green")
@@ -185,7 +185,16 @@ if (time == 5){
     localStorage.removeItem("3time")
     localStorage.removeItem("4time")
 }
-if (time >= 6){
+if (time <= 6){
+    $("#9block").css("backgroundColor", "grey")
+    $("#10block").css("backgroundColor", "grey")
+    $("#11block").css("backgroundColor", "grey")
+    $("#12block").css("backgroundColor", "grey")
+    $("#1block").css("backgroundColor", "grey")
+    $("#2block").css("backgroundColor", "grey")
+    $("#3block").css("backgroundColor", "grey")
+    $("#4block").css("backgroundColor", "grey")
+    $("#5block").css("backgroundColor", "grey")
     localStorage.clear()
 }
 
